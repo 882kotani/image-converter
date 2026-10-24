@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#2563eb" />
+    <title>画像ファイル変換ツール</title>
+    <!-- PDF.js CDN (v3.11.174) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+    <script>
+      if (window.pdfjsLib) {
+        window.pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+      }
+    </script>
+
+    <!-- ag-psd CDN (v7.0.5) -->
+    <script src="https://unpkg.com/ag-psd@7.0.5/dist/bundle.js"></script>
+  </head>
+  <body>
+    <noscript>このアプリケーションを実行するにはJavaScriptを有効にしてください。</noscript>
+    <div id="root"></div>
+  </body>
+</html>
